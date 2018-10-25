@@ -1,6 +1,107 @@
-.body_bg{
+body.body_bg{
   background:#222D32;
+  padding-left: 0;
 }
 .panel_top{
   margin-top: 150px;
+}
+
+/* 首页 */
+html,
+body{
+  height: 100%;
+}
+body{
+  padding-left: 180px;
+  transition: all 1s;
+}
+
+body.active{
+  padding-left: 0;
+}
+ul,
+ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a:hover{
+  text-decoration: none;
+}
+.lt_aside{
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.active{
+  left: -180px;
+}
+.lt_main{
+  width: 100%;
+  height: 100%;
+}
+.brand a{
+ display: block;
+ height: 50px;
+ width: 100%;
+ background-color: #367FA9;
+ color: #fff;
+ font-size: 24px;
+ line-height: 50px;
+ text-align: center;
+}
+.user img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 30px auto 0;
+  display: block;
+}
+.user p{
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.nav a{
+  height: 40px;
+  line-height: 40px;
+  color: #ccc;
+  padding-left: 50px;
+  display: block;
+  border-left: 3px solid transparent;
+}
+.nav a.active{
+  border-left: 3px solid #069;
+  background-color: #1d1f21;
+  color: #fff;
+}
+.nav .child a{
+  padding-left: 70px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+}
+.lt_topBar{
+  height: 50px;
+  width: 100%;
+  background-color: #3C8DBC;
+  padding:0 20px;
+  margin-bottom: 20px;
+}
+.lt_topBar a{
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+}
+.chart_left,
+.chart_right{
+  width: 45%;
+  height: 400px;
 }
