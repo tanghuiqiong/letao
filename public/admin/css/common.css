@@ -5,7 +5,9 @@ body.body_bg{
 .panel_top{
   margin-top: 150px;
 }
-
+.add_category{
+  margin-bottom: 15px;
+}
 /* 首页 */
 html,
 body{
