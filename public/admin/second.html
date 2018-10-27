@@ -155,7 +155,7 @@
       <td>{{ (page-1)*size + i + 1 }}</td>
       <td>{{ v.categoryName }}</td>
       <td>{{ v.brandName }}</td>
-      <td><img width="50" height="50" src="{{ v.brandLogo }}" alt=""></td>
+      <td><img width="50" height="50" src="{{v.brandLogo?v.brandLogo:'images/none.png' }}" alt=""></td>
     </tr>
     {{ /each }}
   </script>
